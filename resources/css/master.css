@@ -3,12 +3,17 @@ html {
   font-family: helvetica, sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .gray {
   color: rgb(169,169,169);
 }
 
 .strong {
-  color: rgb(105,105,105);
+  color: rgb(80,80,80);
   font-weight: bold;
 }
 
@@ -19,6 +24,10 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
 }
 
 .logo {
@@ -31,11 +40,6 @@ header {
   height: 3.5rem;
 }
 
-.logo span {
-  padding: 0;
-  margin: 0;
-}
-
 nav {
   padding: 0 24px;
 }
@@ -43,6 +47,56 @@ nav {
 nav span {
   font-size: 1.25rem;
   padding-left: 16px;
+  color: rgb(80,80,80);
 }
 
 /* Styles for Banner */
+
+.content {
+  position: absolute;
+  top: 64px;
+  z-index: 1;
+}
+
+.banner {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(220,220,220);
+  width: 100%;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.tag {
+  width: 30%;
+  color: rgb(80,80,80);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tag h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.tag h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 2rem;
+}
+
+span.button {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(220,220,220);
+  background-color: rgb(80,80,80);
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  border-radius: .1rem;
+}
