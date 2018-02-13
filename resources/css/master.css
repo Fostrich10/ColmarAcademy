@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgb(80,80,80);
+}
+
+p {
+  color: rgb(120,120,120);
+}
+
 .gray {
   color: rgb(169,169,169);
 }
@@ -38,6 +48,7 @@ header {
 
 .logo img {
   height: 3.5rem;
+  margin-left: 1.5rem;
 }
 
 nav {
@@ -68,7 +79,7 @@ nav span {
 .banner img {
   width: 60%;
   height: auto;
-  padding: 2rem 1.5rem;
+  margin: 2rem 3%;
 }
 
 .tag {
@@ -77,11 +88,6 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.tag h1 {
-  font-size: 2.5rem;
-  font-weight: bolder;
 }
 
 .tag h2 {
@@ -99,4 +105,78 @@ span.button {
   margin-top: 2rem;
   font-size: 1.2rem;
   border-radius: .1rem;
+}
+
+/* Styles for Articals */
+
+.articals {
+  display: flex;
+}
+
+.mainArtical {
+  width: 60%;
+  height: auto;
+  border: 1px solid rgb(220,220,220);
+}
+
+.mainArtical img {
+  width: 90%;
+  height: auto;
+  margin: 5%;
+}
+
+.text {
+  margin: 0 5%;
+}
+
+.text h1 {
+  margin-bottom: 1.5rem;
+}
+
+.text p {
+  margin-bottom: 2rem;
+}
+
+.reference {
+  color: rgb(20,20,20);
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.subArticals {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.subArtical {
+  border: 1px solid rgb(220,220,220);
+  display: flex;
+  align-items: center;
+  transition: background-color 500ms ease 100ms;
+}
+
+.subArtical img {
+  width: 30%;
+  height: auto;
+  margin: 5%;
+}
+
+.subArtical div {
+  width: 60%;
+}
+
+ .subArtical:hover {
+  background-color: rgb(220,220,220);
+}
+
+.subArtical h3 {
+  font-size: 1.5rem;
+  color: rgb(80,80,80);
+  font-weight: bold;
+}
+
+.subArtical p {
+  margin: .5rem 0;
 }
