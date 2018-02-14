@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+  padding-top: 2rem;
   font-size: 2.5rem;
   font-weight: bolder;
   color: rgb(80,80,80);
@@ -29,6 +30,11 @@ img {
   height: auto;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 .gray {
   color: rgb(169,169,169);
 }
@@ -36,6 +42,42 @@ img {
 .strong {
   color: rgb(80,80,80);
   font-weight: bold;
+}
+
+.main {
+  width: 60%;
+  height: auto;
+}
+
+.subs {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  transition: background-color 500ms ease 100ms;
+}
+
+.sub:hover {
+ background-color: rgb(220,220,220);
+}
+
+.sub img {
+  width: 30%;
+  height: auto;
+  margin: 5%;
+}
+
+.sub div {
+  width: 60%;
+}
+
+.sub p {
+ margin: .5rem 0;
 }
 
 /* Styles for Header */
@@ -124,66 +166,37 @@ span.button {
   display: flex;
 }
 
-.mainArtical {
-  width: 60%;
-  height: auto;
+.main.artical {
   border: 1px solid rgb(220,220,220);
 }
 
-.mainArtical img {
+.main.artical img {
   width: 90%;
   height: auto;
   margin: 5%;
 }
 
-.text {
+.main div {
   margin: 0 5%;
 }
 
-.text h1 {
+.main h1 {
+  padding: 0;
   margin-bottom: 1.5rem;
 }
 
-.text p {
+.main p {
   margin-bottom: 2rem;
 }
 
-.reference {
-  color: rgb(20,20,20);
+p.reference {
+  color: rgb(50,50,50);
   font-size: .75rem;
   font-weight: bold;
 }
 
-.subArticals {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  flex-basis: auto;
-}
-
-.subArtical {
+.artical {
   border: 1px solid rgb(220,220,220);
-  display: flex;
-  align-items: center;
-  transition: background-color 500ms ease 100ms;
-}
-
-.subArtical img {
-  width: 30%;
-  height: auto;
-  margin: 5%;
-}
-
-.subArtical div {
-  width: 60%;
-}
-
- .subArtical:hover {
-  background-color: rgb(220,220,220);
-}
-
-.subArtical p {
-  margin: .5rem 0;
 }
 
 /* Styles for Cources section */
@@ -193,31 +206,27 @@ span.button {
   text-align: center;
 }
 
-.classes h1 {
-  padding-top: 2rem;
-}
-
 .courses {
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .course {
   width: 28%;
   background-color: white;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: left;
   transition: width 500ms ease 200ms, margin 500ms ease 200ms;
 }
 
  .course:hover {
   width: 40%;
-  margin: 1rem;
+  margin: .5rem;
 }
 
 .course div {
@@ -227,4 +236,25 @@ span.button {
 
 .course p {
   margin-top: 1rem;
+}
+
+/* Styles for Thesis section */
+
+.exhibit h1 {
+  text-align: center;
+}
+
+.thesis {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.main video {
+  width: 90%;
+  height: auto;
+  margin: 5%;
+}
+
+.main h3 {
+  margin-bottom: 1.5rem;
 }
