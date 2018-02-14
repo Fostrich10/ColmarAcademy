@@ -249,6 +249,12 @@ p.reference {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 960px) {
+  .course div {
+    height: 12rem;
+  }
+}
+
 /* Styles for Thesis section */
 
 .exhibit h1 {
