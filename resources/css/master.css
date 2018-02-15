@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: helvetica, sans-serif;
+  color: rgb(120,120,120);
 }
 
 body {
@@ -23,7 +24,6 @@ h3 {
 }
 
 p {
-  color: rgb(120,120,120);
   font-family: 'Playfair Display', serif;
 }
 
